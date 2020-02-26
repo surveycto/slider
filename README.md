@@ -26,7 +26,7 @@ To create your own field plug-in using this as a template, follow these steps:
 
 2. Make changes to the files in the `source` directory.
 
-  -Note: be sure to update the `manifest.json` file as well.
+    -__Note:__ be sure to update the `manifest.json` file as well.
   
 3. Zip the updated contents of the `source` directory.
 
@@ -40,7 +40,7 @@ There should be two parameters included. The first represents the minimum value 
 
 # More Resources
 -__Test form__
-You can find a form definition in this repo here: extras/test-form. This form will help you compare your text field plug-in to the default text field. Click here for instructions.
+ You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
 
 -__Developer documentation__
-More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
+ More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
