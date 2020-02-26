@@ -40,7 +40,9 @@ There should be two parameters included. The first represents the minimum value 
 
 # More Resources
 -__Test form__
+ 
  You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
 
 -__Developer documentation__
- More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
+
+More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
