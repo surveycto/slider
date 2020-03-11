@@ -1,4 +1,4 @@
-# Slider
+# Slider (in alpha)
 ![Preview - two sliders on one screen](/extras/preview.jpg)
 
 # Description
@@ -27,7 +27,7 @@ To create your own field plug-in using this as a template, follow these steps:
 2. Make changes to the files in the `source` directory.
 
     -__Note:__ be sure to update the `manifest.json` file as well.
-  
+
 3. Zip the updated contents of the `source` directory.
 
 4. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
@@ -36,11 +36,11 @@ To create your own field plug-in using this as a template, follow these steps:
 
 # Parameters
 There should be two parameters included. The first represents the minimum value of the range and the second represents the maximum value of the range. For example to create a slider range from 0 to 150, you can use this apprearance
-`custom-slider(A="0", B="150")`
+`custom-slider(min="0", max="150")`
 
 # More Resources
 -__Test form__
- 
+
  You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
 
 -__Developer documentation__
