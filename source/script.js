@@ -13,7 +13,7 @@ input.max = parameters[1].value;
 //Define what happens when the user attempts to clear the response
 function clearAnswer() {
     input.innerHTML = '';
-} 
+}
 
 //If the field is not marked readonly, then focus on the field
 function setFocus() {
