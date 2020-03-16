@@ -1,4 +1,4 @@
-# Slider (in alpha)
+# Slider (in testing)
 ![Preview - two sliders on one screen](/extras/preview.jpg)
 
 # Description
