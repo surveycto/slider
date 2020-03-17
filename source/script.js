@@ -3,12 +3,19 @@ var input = document.getElementById('myRange');
 
 //collect parameters entered in Form Definition
 var parameters = fieldProperties.PARAMETERS;
+var field_type = fieldProperties.FIELDTYPE;
+var current_value = fieldProperties.CURRENT_ANSWER;
 
 //get parameter values and set the max and min based on these
 input.min = parameters[0].value;
 input.max = parameters[1].value;
 
-
+if (field_type =='integer'){
+  input.step = 1;
+}
+else if (field_type =='decimal') {
+  input.step = 0.1;
+}
 
 //Define what happens when the user attempts to clear the response
 function clearAnswer() {
@@ -25,4 +32,8 @@ function setFocus() {
 // Save the user's response (update the current answer)
 input.oninput = function() {
     setAnswer(this.value);
+}
+
+if (current_value != null){
+  input.value = current_value;
 }
