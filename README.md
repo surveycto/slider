@@ -1,4 +1,4 @@
-# Slider (in testing)
+# Slider
 ![Preview - two sliders on one screen](/extras/preview.jpg)
 
 # Description
@@ -35,13 +35,19 @@ To create your own field plug-in using this as a template, follow these steps:
 5. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 # Parameters
-There should be two parameters included. The first represents the minimum value of the range and the second represents the maximum value of the range. For example to create a slider range from 0 to 150, you can use this apprearance
-`custom-slider(min="0", max="150")`
+The plugin can take upto 4 parameters.
+1. min - The lowest value in the range of permitted values
+2. max - The greatest value in the range of permitted values
+3. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals
+4. display_value (optional) - use this to display the current value of the slider below the slider.
+`custom-slider(min="0", max="150", step=5)`
+`custom-slider(min="0", max="1", step=0.01)`
+`custom-slider(min="0", max="100", step=1, display_value='yes')`
 
 # More Resources
 -__Test form__
 
- You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
+ You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider/blob/master/extras/sample_form/slider_sample.xlsx). This form will help you create a sample form to test the functionality of the plugin.
 
 -__Developer documentation__
 
