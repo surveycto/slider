@@ -40,6 +40,9 @@ The plugin can take upto 4 parameters.
 2. max - The greatest value in the range of permitted values
 3. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals
 4. display_value (optional) - use this to display the current value of the slider below the slider.  
+
+Example usage is as follows:  
+
 `custom-slider(min="0", max="150", step=5)`  
 `custom-slider(min="0", max="1", step=0.01)`  
 `custom-slider(min="0", max="100", step=1, display_value='yes')`
