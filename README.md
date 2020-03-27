@@ -1,5 +1,5 @@
 # Slider
-![Preview - two sliders on one screen](/extras/preview.jpg)
+![Preview - two sliders on one screen](/extras/preview1.jpg)
 
 # Description
 Allows for a continuous slider with no markers along the way (for more subjective ratings)
