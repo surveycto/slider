@@ -7,7 +7,7 @@
 /* The slider itself */
 .slider {
 -webkit-appearance: none; /* Override default CSS styles */
-width: 100%; /* Full-width */
+width: 95%; /* Full-width */
 height: 10px; /* Specified height */
 border-radius: 5px;
 background: #d3d3d3; /* Grey background */

@@ -50,5 +50,8 @@ input.oninput = function() {
 }
 
 if (current_value != null){
+  if (parameters[3]!= null) {
+    slider.innerHTML = current_value;
+  }
   input.value = current_value;
 }
