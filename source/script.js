@@ -1,25 +1,31 @@
+/* global $, fieldProperties, setAnswer, getPluginParameter, clearAnswer, getMetaData, setMetaData */
+
 // Find the input element
 var input = document.getElementById('myRange')
 var slider = document.getElementById('slider_value')
 
 // collect parameters entered in Form Definition
-var parameters = fieldProperties.PARAMETERS
+var min = getPluginParameter('min')
+var max = getPluginParameter('max')
+var step = getPluginParameter('step')
+var displayValue = getPluginParameter('display_value')
+
 var fieldType = fieldProperties.FIELDTYPE
 var currentValue = fieldProperties.CURRENT_ANSWER
 
 // get parameter values and set the max and min based on these
-input.min = parameters[0].value
-input.max = parameters[1].value
-var stepSize = parameters[2].value
+input.min = parseInt(min)
+input.max = parseInt(max)
+var stepSize = parseInt(step)
 
 if (fieldType === 'integer') {
-  if ((parameters[3] != null) && (stepSize % 1 === 0)) {
+  if ((displayValue != null) && (stepSize % 1 !== 0)) {
     input.step = stepSize
   } else {
     input.step = 1
   }
 } else if (fieldType === 'decimal') {
-  if ((parameters[3] != null) && (stepSize % 1 !== 0)) {
+  if ((displayValue != null) && (stepSize % 1 !== 0)) {
     input.step = stepSize
   } else {
     input.step = 0.1
@@ -41,13 +47,13 @@ function setFocus () {
 // Save the user's response (update the current answer)
 input.oninput = function () {
   setAnswer(this.value)
-  if (parameters[3] != null) {
+  if (displayValue != null) {
     slider.innerHTML = input.value
   }
 }
 
 if (currentValue != null) {
-  if (parameters[3] != null) {
+  if (displayValue != null) {
     slider.innerHTML = currentValue
   }
   input.value = currentValue
