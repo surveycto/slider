@@ -49,10 +49,10 @@ Example usage is as follows:
 `custom-slider(min="0", max="100", step=1, display_value='yes')`
 
 # More Resources
--__Test form__
+* **Sample form**<br>
 
  You can find a form definition in this repo here: [extras/sample_form](https://github.com/surveycto/slider/blob/master/extras/example-form/Example%20form%20-%20slider.xlsx). This form will help you create a sample form to test the functionality of the plugin.
 
--__Developer documentation__
+* **Developer documentation**<br>
 
 More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
