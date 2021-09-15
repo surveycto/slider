@@ -4,7 +4,7 @@
 # Description
 Allows for a continuous slider with no markers along the way (for more subjective ratings)
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/slider/blob/master/slider.fieldplugin.zip)
+[![Download now](extras/download-button.png)](https://github.com/surveycto/slider/raw/master/slider.fieldplugin.zip)
 
 # Features
 
