@@ -27,13 +27,23 @@
 <!-- If the field is marked read only, then only show the input box if there is a current answer. -->
 {{#READONLY}}
     {{#CURRENT_ANSWER}}
-    <input
+    <div class="slidecontainer">
+        <input
+            type="range"
+            value="{{CURRENT_ANSWER}}"
+            class="slider"
+            id="myRange"
+            disabled
+        >
+    </div>
+    <p id="slider_value"></p>
+    <!-- <input
         type="text"
         value="{{CURRENT_ANSWER}}"
         id="integer-field"
         class="response default-answer-text-size"
         readonly
-    />
+    /> -->
     {{/CURRENT_ANSWER}}
 {{/READONLY}}
 

@@ -1,7 +1,7 @@
 {
 	"name" : "Slider Without Labels",
 	"author" : "Dobility",
-	"version": "1.43",
+	"version": "1.45",
 	"supportedFieldTypes": ["integer", "decimal"],
 	"hideDefaultRequiredMessage": false,
 	"hideDefaultConstraintMessage": false

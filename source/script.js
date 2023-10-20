@@ -41,6 +41,8 @@ function clearAnswer () {
 function setFocus () {
   if (!fieldProperties.READONLY) {
     input.focus()
+  } else {
+    input.disabled = true
   }
 }
 
